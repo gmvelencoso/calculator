@@ -4,7 +4,10 @@ def main():
 
 
 def operate(string):
-    return eval(string)
+    try:
+	return eval(string)
+    except:
+	return 'Error'
 
 if __name__ == '__main__':
 	main()
